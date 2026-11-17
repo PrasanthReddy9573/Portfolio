@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mukkera Prasanth Reddy | Portfolio</title>
+<meta name="description" content="B.Tech CSE student building web apps on AWS. Open to internships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#home">Prasanth Reddy</a>
+  <nav aria-label="Sections">
+    <ol class="line">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+  <button id="theme" type="button" aria-label="Switch between light and dark theme">◐</button>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="hello">Hello, I’m</p>
+      <h1>Mukkera Prasanth Reddy</h1>
+      <p class="lead">B.Tech CSE student at MITS. I build web apps on AWS and I’m learning DevOps and data structures.</p>
+      <ul class="chips" aria-label="Main skills">
+        <li>Java</li><li>SQL</li><li>AWS</li><li>DevOps learner</li><li>DSA</li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="CV.pdf" download>Download CV</a>
+      </div>
+      <p class="status"><span class="dot" aria-hidden="true"></span>Open to internships</p>
+    </div>
+    <figure class="portrait">
+      <img src="Prasanth.jpg" alt="Portrait of Mukkera Prasanth Reddy" width="800" height="400">
+    </figure>
+  </section>
+
+
+  <section id="about" class="sec">
+    <h2>About me</h2>
+    <div class="about-grid">
+      <div>
+        <p>I’m a Computer Science Engineering student at MITS, Madanapalle. I started with a diploma at Government Polytechnic, Proddatur, then moved into B.Tech, so I came to the degree already used to building things.</p>
+        <p>My goal is to become a Software engineer. I’m getting there by building real projects on AWS and learning DevOps and data structures along the way.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Studying</dt><dd>B.Tech CSE, MITS Madanapalle</dd></div>
+        <div><dt>Based in</dt><dd>Andhra Pradesh, India</dd></div>
+        <div><dt>Languages</dt><dd>English, Telugu, Hindi</dd></div>
+        <div><dt>Outside code</dt><dd>Cricket and badminton</dd></div>
+        <div><dt>Looking for</dt><dd>Internships in cloud and software</dd></div>
+      </dl>
+    </div>
+    <div class="stats">
+      <div class="stat" style="--c:var(--blue)"><b data-count="8.63" data-dec="2">8.63</b><span>CGPA in B.Tech</span></div>
+      <div class="stat" style="--c:var(--red)"><b data-count="2">2</b><span>projects, 1 completed</span></div>
+      <div class="stat" style="--c:var(--green)"><b data-count="6">6</b><span>AWS services used in the Metro project</span></div>
+      <div class="stat" style="--c:var(--ink)"><b data-count="3">3</b><span>certificates</span></div>
+    </div>
+  </section>
+
+  <section id="skills" class="sec">
+    <h2>Skills</h2>
+    <div class="lane" style="--c:var(--green)">
+      <h3>Comfortable<small>Strong base</small></h3>
+      <ul class="stops"><li>Java</li><li>SQL</li><li>C</li></ul>
+    </div>
+    <div class="lane" style="--c:var(--blue)">
+      <h3>Working knowledge<small>Used in projects</small></h3>
+      <ul class="stops"><li>HTML and CSS</li><li>JavaScript</li><li>Git and GitHub</li></ul>
+    </div>
+    <div class="lane" style="--c:var(--red)">
+      <h3>Learning now<small>Building up</small></h3>
+      <ul class="stops"><li>AWS</li><li>DSA</li></ul>
+    </div>
+  </section>
+
+
+  <section id="projects" class="sec">
+    <h2>Projects</h2>
+
+    <article class="proj">
+      <header>
+        <h3>Metro Ticket Booking System</h3>
+        <span class="badge done">Completed</span>
+      </header>
+      <p class="desc">A web app for booking metro tickets. Choose a source and destination station, get your ticket, and see or cancel your past bookings. I built it on my own, from the frontend to the AWS backend.</p>
+      <ul class="feat">
+        <li>Source and destination station selection</li>
+        <li>Ticket generation</li>
+        <li>Booking history and cancellation</li>
+      </ul>
+
+      <ol class="flow" aria-label="How the app is built on AWS">
+        <li style="--c:var(--blue)"><b>S3</b><span>Hosts the frontend</span></li>
+        <li style="--c:var(--red)"><b>API Gateway</b><span>Receives requests</span></li>
+        <li style="--c:var(--green)"><b>Lambda</b><span>Node.js logic</span></li>
+        <li style="--c:var(--ink)"><b>DynamoDB</b><span>Stores bookings</span></li>
+      </ol>
+      <p class="also">Also used: IAM for access control and EC2.</p>
+
+      <div class="shots">
+        <div>Screenshot: choose stations</div>
+        <div>Screenshot: your ticket</div>
+        <div>Screenshot: booking history</div>
+      </div>
+
+      <ul class="chips">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>AWS Lambda</li><li>API Gateway</li><li>DynamoDB</li><li>S3</li><li>IAM</li><li>EC2</li>
+      </ul>
+      <a class="btn primary" href="https://github.com/PrasanthReddy9573/Metro-Ticket-Booking-System" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+
+    <article class="proj">
+      <header>
+        <h3>Online Examination System</h3>
+        <span class="badge progress">In progress</span>
+      </header>
+      <p class="desc">A web platform for creating and taking exams online. I presented it at the Pratyagra 2025 project expo and I’m still building it out.</p>
+      <ul class="chips">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
+      </ul>
+    </article>
+  </section>
+
+
+  <section id="journey" class="sec">
+    <h2>Journey</h2>
+    <ol class="tl">
+      <li>
+        <div><p class="when">2021 to 2022</p><h3>Matriculation</h3><p>Vijayanikethan English Medium High School</p></div>
+        <p class="score">92%</p>
+      </li>
+      <li>
+        <div><p class="when">2022 to 2025</p><h3>Diploma</h3><p>Government Polytechnic, Proddatur. Completed the ISRO IIRS geodata processing course in February 2025.</p></div>
+        <p class="score">85%</p>
+      </li>
+      <li class="now">
+        <div><p class="when">2025 to 2028</p><h3>B.Tech, Computer Science Engineering</h3><p>MITS, Madanapalle. Currently studying.</p></div>
+        <p class="score">8.63 <small>CGPA</small></p>
+      </li>
+    </ol>
+  </section>
+
+
+  <section id="certificates" class="sec">
+    <h2>Certificates</h2>
+    <div class="cert-grid">
+      <article class="cert-main">
+        <a href="isro.jpg" target="_blank" rel="noopener"><img src="isro.jpg" alt="ISRO IIRS certificate of attendance for Geodata Processing using Python and Machine Learning" width="1200" height="850"></a>
+        <h3>Geodata Processing using Python and Machine Learning</h3>
+        <p>Online course by the Indian Institute of Remote Sensing, ISRO. 17 to 28 February 2025, 9 hours, 89% attendance.</p>
+        <p><a href="https://certificate.iirs.gov.in" target="_blank" rel="noopener">Validate this certificate on certificate.iirs.gov.in</a></p>
+      </article>
+      <ul class="cert-list">
+        <li><h3>Joy of Computing using Python</h3><p>NPTEL</p></li>
+        <li><h3>Fundamentals of AI</h3><p>Accenture</p></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="contact" class="sec">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="desc">I’m looking for an internship in cloud or software. If you have a role, a project or a question, send me a message.</p>
+        <ul class="reach">
+          <li><span>Email</span><a href="mailto:prasanthreddy792@gmail.com">prasanthreddy792@gmail.com</a></li>
+          <li><span>Phone</span><a href="tel:+919063624575">+91 90636 24575</a></li>
+          <li><span>GitHub</span><a href="https://github.com/PrasanthReddy9573" target="_blank" rel="noopener">github.com/PrasanthReddy9573</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/prasanthreddy38/" target="_blank" rel="noopener">linkedin.com/in/prasanthreddy38</a></li>
+        </ul>
+      </div>
+      <form id="contact-form">
+        <label>Your name<input name="name" required autocomplete="name"></label>
+        <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Subject<input name="subject"></label>
+        <label>Message<textarea name="message" rows="6" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="note">This opens your email app with the message filled in.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>© 2026 Mukkera Prasanth Reddy</p>
+  <a href="#home">Back to top</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
